@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rezervace — VETEVRA · MVDr. Eva Vrátníková</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" href="assets/images/logo.png" />
+</head>
+<body class="reservation-page">
+
+<!-- ================= HEADER ================= -->
+<header class="site-header" id="header">
+  <nav class="nav container">
+    <a href="index.html" class="brand">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+      </span>
+      <span>
+        VETEVRA
+        <span class="brand-sub">MVDr. Eva Vrátníková</span>
+      </span>
+    </a>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html#about">O nás</a></li>
+      <li><a href="index.html#services">Služby</a></li>
+      <li><a href="index.html#hours">Ordinační hodiny</a></li>
+      <li><a href="index.html#contact">Kontakt</a></li>
+      <li><a href="tel:+420724970066" class="btn btn-secondary">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+        724 970 066
+      </a></li>
+    </ul>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span></button>
+  </nav>
+</header>
+
+<div class="reservation-hero container">
+  <span class="section-eyebrow">Online rezervace</span>
+  <h1>Objednejte se ve&nbsp;třech krocích</h1>
+  <p>Vyberte typ vyšetření, najděte si volný termín a vyplňte základní údaje. Rezervaci pak telefonicky potvrdíme.</p>
+</div>
+
+<div class="reservation-wrapper">
+
+  <!-- Stepper -->
+  <div class="stepper" id="stepper">
+    <div class="step active" data-step="1">
+      <span class="step-num">1</span>
+      <span>Služba</span>
+    </div>
+    <div class="step" data-step="2">
+      <span class="step-num">2</span>
+      <span>Termín</span>
+    </div>
+    <div class="step" data-step="3">
+      <span class="step-num">3</span>
+      <span>Údaje</span>
+    </div>
+    <div class="step" data-step="4">
+      <span class="step-num">✓</span>
+      <span>Hotovo</span>
+    </div>
+  </div>
+
+  <div class="booking-grid">
+
+    <!-- ============ MAIN PANEL ============ -->
+    <div>
+
+      <!-- ===== Krok 1: Služba ===== -->
+      <div class="booking-panel" data-panel="1">
+        <h2>Jaký typ vyšetření potřebujete?</h2>
+        <p class="desc">Vyberte to, co nejlépe odpovídá důvodu návštěvy. Pokud si nejste jistí, zvolte „Klinické vyšetření".</p>
+
+        <div class="service-options" id="serviceOptions">
+          <div class="option-card" data-service="prevention" data-duration="30 min" data-label="Preventivní prohlídka">
+            <div class="option-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+            </div>
+            <div class="option-text">
+              <strong>Preventivní prohlídka</strong>
+              <span>Klinické vyšetření, vakcinace, antiparazitika</span>
+            </div>
+            <div class="option-meta"><strong>30 min</strong></div>
+          </div>
+
+          <div class="option-card" data-service="checkup" data-duration="20 min" data-label="Klinické vyšetření">
+            <div class="option-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            </div>
+            <div class="option-text">
+              <strong>Klinické vyšetření</strong>
+              <span>Akutní problém, nevolnost, kontrola</span>
+            </div>
+            <div class="option-meta"><strong>20 min</strong></div>
+          </div>
+
+          <div class="option-card" data-service="ultrasound" data-duration="40 min" data-label="Sonografie">
+            <div class="option-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+            </div>
+            <div class="option-text">
+              <strong>Sonografie</strong>
+              <span>Ultrazvukové vyšetření</span>
+            </div>
+            <div class="option-meta"><strong>40 min</strong></div>
+          </div>
+
+          <div class="option-card" data-service="dental" data-duration="60 min" data-label="Stomatologie">
+            <div class="option-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5.5C9 2 4 3 4 8c0 5 3 13 4 13s2-3 4-3 3 3 4 3 4-8 4-13c0-5-5-6-8-2.5z"/></svg>
+            </div>
+            <div class="option-text">
+              <strong>Stomatologická péče</strong>
+              <span>Odstranění zubního kamene, ošetření v narkóze</span>
+            </div>
+            <div class="option-meta"><strong>60 min</strong></div>
+          </div>
+
+          <div class="option-card" data-service="microchip" data-duration="20 min" data-label="Čipování & pas">
+            <div class="option-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6v6H9z"/></svg>
+            </div>
+            <div class="option-text">
+              <strong>Čipování & pas</strong>
+              <span>Mikročip, evropský pas pro malé zvíře</span>
+            </div>
+            <div class="option-meta"><strong>20 min</strong></div>
+          </div>
+
+          <div class="option-card" data-service="nutrition" data-duration="45 min" data-label="Výživové poradenství">
+            <div class="option-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+            </div>
+            <div class="option-text">
+              <strong>Výživové poradenství</strong>
+              <span>REICO produkty, eliminační diety</span>
+            </div>
+            <div class="option-meta"><strong>45 min</strong></div>
+          </div>
+        </div>
+
+        <div class="booking-actions">
+          <span style="color:var(--warm-500); font-size:0.9rem;">Krok 1 ze 3</span>
+          <button class="btn btn-primary" id="toStep2" disabled>
+            Pokračovat
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- ===== Krok 2: Termín ===== -->
+      <div class="booking-panel" data-panel="2" style="display:none;">
+        <h2>Vyberte si volný termín</h2>
+        <p class="desc">Zelený puntík označuje den, ve kterém máme volné sloty. Operační dny zobrazujeme jako nedostupné.</p>
+
+        <div class="calendar-card">
+          <div class="calendar">
+            <div class="calendar-head">
+              <div class="month" id="calMonth">Květen 2026</div>
+              <div class="calendar-nav">
+                <button id="calPrev" aria-label="Předchozí měsíc">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+                </button>
+                <button id="calNext" aria-label="Další měsíc">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+                </button>
+              </div>
+            </div>
+            <div class="calendar-grid" id="calGrid">
+              <div class="day-name">Po</div>
+              <div class="day-name">Út</div>
+              <div class="day-name">St</div>
+              <div class="day-name">Čt</div>
+              <div class="day-name">Pá</div>
+              <div class="day-name">So</div>
+              <div class="day-name">Ne</div>
+            </div>
+          </div>
+
+          <div class="time-slots">
+            <h4 id="slotsTitle">Vyberte nejprve den</h4>
+            <div id="slotsContent">
+              <p style="color:var(--warm-400); font-size:0.9rem; padding:24px 0; text-align:center;">
+                Volné časy se zobrazí po výběru dne v kalendáři.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="booking-actions">
+          <button class="btn btn-secondary" data-back-to="1">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="transform:rotate(180deg);"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            Zpět
+          </button>
+          <button class="btn btn-primary" id="toStep3" disabled>
+            Pokračovat
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- ===== Krok 3: Údaje ===== -->
+      <div class="booking-panel" data-panel="3" style="display:none;">
+        <h2>Pár základních údajů</h2>
+        <p class="desc">Potřebujeme základní informace o vás a vašem mazlíčkovi. Vše chráníme dle GDPR.</p>
+
+        <form id="bookingForm">
+          <div class="form-grid">
+            <div class="field">
+              <label for="ownerName">Vaše jméno a příjmení *</label>
+              <input id="ownerName" type="text" required placeholder="Jana Nováková" />
+            </div>
+            <div class="field">
+              <label for="ownerPhone">Telefon *</label>
+              <input id="ownerPhone" type="tel" required placeholder="+420 ___ ___ ___" />
+            </div>
+            <div class="field full">
+              <label for="ownerEmail">E-mail *</label>
+              <input id="ownerEmail" type="email" required placeholder="vy@email.cz" />
+            </div>
+            <div class="field">
+              <label for="petName">Jméno mazlíčka *</label>
+              <input id="petName" type="text" required placeholder="Mourek" />
+            </div>
+            <div class="field">
+              <label for="petSpecies">Druh *</label>
+              <select id="petSpecies" required>
+                <option value="">Vyberte…</option>
+                <option>Pes</option>
+                <option>Kočka</option>
+                <option>Králík</option>
+                <option>Morče / hlodavec</option>
+                <option>Pták</option>
+                <option>Jiné</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="petBreed">Plemeno (volitelné)</label>
+              <input id="petBreed" type="text" placeholder="např. domácí kočka, retrívr…" />
+            </div>
+            <div class="field">
+              <label for="petAge">Věk</label>
+              <input id="petAge" type="text" placeholder="např. 3 roky" />
+            </div>
+            <div class="field full">
+              <label for="reason">Důvod návštěvy / popis problému</label>
+              <textarea id="reason" placeholder="Krátce popište, co vašeho mazlíčka trápí, případně jaké léky aktuálně bere…"></textarea>
+            </div>
+            <div class="field full">
+              <label for="firstVisit">Jste u nás poprvé?</label>
+              <select id="firstVisit">
+                <option>Ano, jsme u vás poprvé</option>
+                <option>Ne, již jsme tu byli</option>
+              </select>
+            </div>
+          </div>
+
+          <label class="checkbox-row">
+            <input type="checkbox" id="gdprConsent" required />
+            <span>Souhlasím se <a href="#" style="color:var(--green-700); text-decoration:underline;">zpracováním osobních údajů</a> pro účely rezervace návštěvy.</span>
+          </label>
+
+          <label class="checkbox-row">
+            <input type="checkbox" id="feeAck" required />
+            <span>Beru na vědomí <strong>storno poplatek 500 Kč</strong> v případě nedostavení se bez omluvy alespoň 24 hodin předem.</span>
+          </label>
+        </form>
+
+        <div class="booking-actions">
+          <button class="btn btn-secondary" data-back-to="2">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="transform:rotate(180deg);"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            Zpět
+          </button>
+          <button class="btn btn-primary" id="submitBooking">
+            Odeslat rezervaci
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- ===== Krok 4: Hotovo ===== -->
+      <div class="booking-panel" data-panel="4" style="display:none; background:transparent; box-shadow:none; padding:0;">
+        <div class="confirm-card">
+          <div class="confirm-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <h2>Rezervace odeslána</h2>
+          <p>Děkujeme! Vaši rezervaci telefonicky potvrdíme nejpozději do následujícího pracovního dne. Pokud byste potřebovali termín změnit, ozvěte se prosím na <a href="tel:+420724970066" style="color:var(--green-700);">724 970 066</a>.</p>
+
+          <div class="confirm-detail" id="confirmSummary"></div>
+
+          <a href="index.html" class="btn btn-primary">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            Zpět na úvod
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ============ SUMMARY SIDEBAR ============ -->
+    <div>
+      <div class="summary-card">
+        <h3>Shrnutí rezervace</h3>
+
+        <div class="summary-row">
+          <span class="lab">Služba</span>
+          <span class="val" id="sumService"><span class="summary-empty">Zatím nevybrána</span></span>
+        </div>
+        <div class="summary-row">
+          <span class="lab">Délka</span>
+          <span class="val" id="sumDuration"><span class="summary-empty">—</span></span>
+        </div>
+        <div class="summary-row">
+          <span class="lab">Datum</span>
+          <span class="val" id="sumDate"><span class="summary-empty">—</span></span>
+        </div>
+        <div class="summary-row">
+          <span class="lab">Čas</span>
+          <span class="val" id="sumTime"><span class="summary-empty">—</span></span>
+        </div>
+        <div class="summary-row">
+          <span class="lab">Místo</span>
+          <span class="val">Sklářská 604/2<br/>Valašské Meziříčí</span>
+        </div>
+
+        <div class="reminder">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+          <span>Nezapomeňte si přinést <strong>očkovací průkaz</strong> nebo <strong>pas</strong> mazlíčka, případně dosavadní lékařské zprávy.</span>
+        </div>
+
+        <div class="fee-warning">
+          <strong>Storno poplatek 500 Kč</strong>
+          Při nedostavení se bez omluvy alespoň 24 hodin předem účtujeme storno poplatek dle pravidel ordinace.
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

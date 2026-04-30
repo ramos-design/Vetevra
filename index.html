@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VETEVRA — Veterinární ordinace MVDr. Eva Vrátníková | Valašské Meziříčí</title>
+  <meta name="description" content="Soukromá veterinární praxe s celostním přístupem ve Valašském Meziříčí. Prevence, diagnostika a léčba malých zvířat. Přírodní preparáty a poradenství." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" href="assets/images/logo.png" />
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="site-header" id="header">
+  <nav class="nav container">
+    <a href="#" class="brand">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+      </span>
+      <span>
+        VETEVRA
+        <span class="brand-sub">MVDr. Eva Vrátníková</span>
+      </span>
+    </a>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">O nás</a></li>
+      <li><a href="#services">Služby</a></li>
+      <li><a href="#hours">Ordinační hodiny</a></li>
+      <li><a href="#gallery">Galerie</a></li>
+      <li><a href="#contact">Kontakt</a></li>
+      <li><a href="reservation.html" class="btn btn-primary">
+        Objednat se
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a></li>
+    </ul>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span></button>
+  </nav>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="hero-content reveal">
+      <div class="hero-badge">
+        <span class="hero-badge-dot"></span>
+        Otevřeno od roku 2018 ve Valašském Meziříčí
+      </div>
+      <h1>Péče s&nbsp;respektem,<br/><em>celostní přístup</em><br/>k vašim mazlíčkům.</h1>
+      <p class="hero-lead">
+        Soukromá veterinární praxe MVDr. Evy Vrátníkové. Specializujeme se na prevenci, diagnostiku a léčbu malých zvířat — s důrazem na šetrnou medicínu a přírodní preparáty tam, kde dávají smysl.
+      </p>
+      <div class="hero-cta">
+        <a href="reservation.html" class="btn btn-primary">
+          Rezervovat termín
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="tel:+420724970066" class="btn btn-secondary">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+          724 970 066
+        </a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <span class="num">7+</span>
+          <span class="lab">let praxe v ordinaci</span>
+        </div>
+        <div class="hero-stat">
+          <span class="num">100%</span>
+          <span class="lab">individuální přístup</span>
+        </div>
+        <div class="hero-stat">
+          <span class="num">ČAVLMZ</span>
+          <span class="lab">certifikovaný člen</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-visual reveal">
+      <div class="photo-main">
+        <img src="assets/images/eva.jpg" alt="MVDr. Eva Vrátníková" />
+      </div>
+      <div class="floating-info">
+        <div class="floating-info-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <div class="floating-info-text">
+          Dnes otevřeno
+          <strong>9:00 — 18:00</strong>
+        </div>
+      </div>
+      <div class="photo-card">
+        <img src="assets/images/clinic.jpg" alt="Ordinace" />
+        <span>— naše ordinace</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TRUST BAR ================= -->
+<div class="trust-bar">
+  <div class="container trust-bar-inner">
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+      Veterinární komora ČR
+    </div>
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+      Certifikovaný ENERGY poradce
+    </div>
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+      VFU Brno absolventka
+    </div>
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+      Šetrný a celostní přístup
+    </div>
+  </div>
+</div>
+
+<!-- ================= SERVICES ================= -->
+<section class="section services" id="services">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">Naše služby</span>
+      <h2>Komplexní péče pro vaše čtyřnohé společníky</h2>
+      <p>Od preventivních prohlídek po náročnější chirurgické zákroky — v ordinaci VETEVRA klademe důraz na pečlivou diagnostiku a šetrnou léčbu.</p>
+    </div>
+
+    <div class="services-grid">
+      <article class="service-card reveal">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+        </div>
+        <h3>Preventivní péče</h3>
+        <p>Pravidelné prohlídky, které zachytí problém dřív, než zvířátko začne strádat.</p>
+        <ul class="service-list">
+          <li>Klinická vyšetření & geriatrická prevence</li>
+          <li>Vakcinace & antiparazitární programy</li>
+          <li>Ošetření zubního kamene</li>
+          <li>Stříhání drápků, vyprazdňování análních žláz</li>
+        </ul>
+      </article>
+
+      <article class="service-card reveal">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </div>
+        <h3>Diagnostika</h3>
+        <p>Moderní vyšetřovací metody pro přesné určení příčiny obtíží.</p>
+        <ul class="service-list">
+          <li>Mikroskopické vyšetření</li>
+          <li>Sonografie (ultrazvuk)</li>
+          <li>Laboratorní rozbory ve spolupráci s laboratořemi</li>
+        </ul>
+      </article>
+
+      <article class="service-card reveal">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+        </div>
+        <h3>Interní medicína</h3>
+        <p>Léčba nemocí orgánových soustav s individuálně sestaveným plánem.</p>
+        <ul class="service-list">
+          <li>Gastroenterologie & urologie</li>
+          <li>Gynekologie a porodnictví</li>
+          <li>Oftalmologie, kardiologie, dermatologie</li>
+          <li>Endokrinologie</li>
+        </ul>
+      </article>
+
+      <article class="service-card reveal">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
+        </div>
+        <h3>Chirurgie</h3>
+        <p>Operace měkkých tkání v moderně vybaveném sále s pečlivou anestezií.</p>
+        <ul class="service-list">
+          <li>Kastrace & sterilizace</li>
+          <li>Odstraňování nádorů</li>
+          <li>Stomatochirurgie</li>
+          <li>Šití ran a rekonstrukční zákroky</li>
+        </ul>
+      </article>
+
+      <article class="service-card reveal">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v8M4.93 10.93l5.66 5.66M2 18h8M4.93 25.07l5.66-5.66M12 26v-8M19.07 25.07l-5.66-5.66M22 18h-8M19.07 10.93l-5.66 5.66" transform="translate(0 -4)"/></svg>
+        </div>
+        <h3>Přírodní terapie</h3>
+        <p>Šetrná pomoc pomocí prověřených přírodních preparátů ENERGY.</p>
+        <ul class="service-list">
+          <li>Doporučení & individuální poradenství</li>
+          <li>Doplnění klasické léčby</li>
+          <li>Detoxikační kúry</li>
+        </ul>
+      </article>
+
+      <article class="service-card reveal">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6v6H9z"/></svg>
+        </div>
+        <h3>Pasy & čipování</h3>
+        <p>Vše potřebné pro cestování s mazlíčkem do zahraničí.</p>
+        <ul class="service-list">
+          <li>Mikročipování</li>
+          <li>Evropské pasy pro malá zvířata</li>
+          <li>Vystavení zdravotních potvrzení</li>
+        </ul>
+      </article>
+
+      <article class="service-card reveal">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+        </div>
+        <h3>Výživové poradenství</h3>
+        <p>Jak krmit, aby váš mazlíček dlouho prosperoval — produkty REICO.</p>
+        <ul class="service-list">
+          <li>Nastavení krmné dávky</li>
+          <li>Podpora chronických pacientů</li>
+          <li>Eliminační diety při alergiích</li>
+        </ul>
+      </article>
+
+      <article class="service-card reveal">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        </div>
+        <h3>Konzultace</h3>
+        <p>Nejste si jisti? Zavolejte. Rádi poradíme i bez objednání.</p>
+        <ul class="service-list">
+          <li>Telefonické konzultace</li>
+          <li>Druhý odborný názor</li>
+          <li>Doporučení specializovaných pracovišť</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section class="section about" id="about">
+  <div class="container about-grid">
+    <div class="about-visual reveal">
+      <div class="photo-1">
+        <img src="assets/images/eva.jpg" alt="MVDr. Eva Vrátníková" />
+      </div>
+      <div class="photo-2">
+        <img src="assets/images/energy.jpg" alt="ENERGY produkty" />
+      </div>
+    </div>
+
+    <div class="about-content reveal">
+      <span class="section-eyebrow">O lékařce</span>
+      <h2>MVDr. Eva Vrátníková</h2>
+      <p>
+        Soukromou veterinární praxi VETEVRA otevřela ve Valašském Meziříčí v říjnu 2018. V ordinaci se zaměřuje především na prevenci, diagnostiku a léčbu nemocí malých zvířat — psů, koček a malých savců.
+      </p>
+      <p>
+        Tam, kde to dává smysl, sahá po přírodních přípravcích a celostním pohledu na pacienta. Ráda poskytne konzultaci ohledně výživy a preventivní péče o vaše čtyřnohé miláčky.
+      </p>
+
+      <div class="credentials">
+        <h4>Vzdělání & Certifikace</h4>
+        <ul>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            Veterinární a farmaceutická univerzita Brno (VFU)
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            Členka České asociace veterinárních lékařů (ČAVLMZ)
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            Pravidelné vzdělávání pod KVL ČR
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            Certifikovaná poradkyně ENERGY
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            Poradkyně výživy zvířat (produkty REICO)
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= HOURS ================= -->
+<section class="section hours" id="hours">
+  <div class="container hours-inner">
+    <div class="reveal">
+      <span class="section-eyebrow" style="background:rgba(116,198,157,0.15); color:var(--green-300);">Ordinační hodiny</span>
+      <h2>Naplánujte si návštěvu v&nbsp;klidu</h2>
+      <div class="hours-lead">
+        <p>Pro vyšetření je potřeba se předem objednat — nejlépe telefonicky nebo přes objednávkový systém. Operační dny jsou vyhrazené pro plánované zákroky.</p>
+      </div>
+      <a href="reservation.html" class="btn btn-ghost">
+        Online rezervace
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+
+    <div class="hours-table reveal" id="hoursTable">
+      <div class="hours-row" data-day="1">
+        <span class="hours-day">Pondělí</span>
+        <span class="hours-time">9:00 – 11:00 &nbsp;·&nbsp; 16:00 – 18:00</span>
+      </div>
+      <div class="hours-row" data-day="2">
+        <span class="hours-day">Úterý</span>
+        <span class="hours-time">Operační den</span>
+      </div>
+      <div class="hours-row" data-day="3">
+        <span class="hours-day">Středa</span>
+        <span class="hours-time">9:00 – 11:00</span>
+      </div>
+      <div class="hours-row" data-day="4">
+        <span class="hours-day">Čtvrtek</span>
+        <span class="hours-time">Operace dop. &nbsp;·&nbsp; 16:00 – 18:00</span>
+      </div>
+      <div class="hours-row" data-day="5">
+        <span class="hours-day">Pátek</span>
+        <span class="hours-time">9:00 – 11:00</span>
+      </div>
+      <div class="hours-row" data-day="6">
+        <span class="hours-day">Sobota</span>
+        <span class="hours-time closed">Zavřeno</span>
+      </div>
+      <div class="hours-row" data-day="0">
+        <span class="hours-day">Neděle</span>
+        <span class="hours-time closed">Zavřeno</span>
+      </div>
+
+      <div class="hours-note">
+        <strong>Plánovaná uzavření:</strong> 1. května (státní svátek) · 7.–10. května (dovolená)
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= GALLERY ================= -->
+<section class="section gallery" id="gallery">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">Galerie</span>
+      <h2>Pojďte se podívat dovnitř</h2>
+      <p>Útulná, světlá ordinace navržená tak, aby se v ní vaši mazlíčci cítili co nejlépe.</p>
+    </div>
+
+    <div class="gallery-grid">
+      <div class="gallery-item tall reveal"><img src="assets/images/hero1.jpg" alt="Ordinace VETEVRA" /></div>
+      <div class="gallery-item wide reveal"><img src="assets/images/hero2.jpg" alt="Vyšetřovna" /></div>
+      <div class="gallery-item reveal"><img src="assets/images/gallery1.jpg" alt="Detail vyšetření" /></div>
+      <div class="gallery-item reveal"><img src="assets/images/clinic.jpg" alt="Prostor ordinace" /></div>
+      <div class="gallery-item reveal"><img src="assets/images/energy.jpg" alt="ENERGY produkty" /></div>
+      <div class="gallery-item wide reveal"><img src="assets/images/gallery2.jpg" alt="Spring Detox" /></div>
+      <div class="gallery-item reveal"><img src="assets/images/hero3.jpg" alt="Ordinace" /></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PHILOSOPHY ================= -->
+<section class="section philosophy">
+  <div class="container">
+    <div class="philosophy-card reveal">
+      <blockquote>
+        Ke každému pacientovi přistupujeme individuálně. Nejde jen o akutní problém — jde o celkový stav, prostředí a harmonii zvířete. Tam, kde mohou pomoci přírodní preparáty, sahám po nich rád(a).
+      </blockquote>
+      <cite>— MVDr. Eva Vrátníková</cite>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="section contact" id="contact">
+  <div class="container contact-grid">
+    <div class="contact-info reveal">
+      <span class="section-eyebrow">Kontakt</span>
+      <h2>Najdete nás v&nbsp;centru Valmezu</h2>
+      <p>Ordinace je dobře dostupná autem i MHD (linka č. 1, zastávka Tesla I). Pro parkování využívejte prosím vyhrazené plochy v okolí.</p>
+
+      <ul class="contact-list">
+        <li>
+          <span class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </span>
+          <div>
+            <span class="label">Adresa</span>
+            <span class="value">Sklářská 604/2, 757 01 Valašské Meziříčí</span>
+          </div>
+        </li>
+        <li>
+          <span class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+          </span>
+          <div>
+            <span class="label">Telefon</span>
+            <a href="tel:+420724970066" class="value">+420 724 970 066</a>
+          </div>
+        </li>
+        <li>
+          <span class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </span>
+          <div>
+            <span class="label">E-mail</span>
+            <a href="mailto:vetevra@gmail.com" class="value">vetevra@gmail.com</a>
+          </div>
+        </li>
+        <li>
+          <span class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          </span>
+          <div>
+            <span class="label">Objednávky</span>
+            <span class="value">Telefonicky · 8:00 – 16:00 · nebo online</span>
+          </div>
+        </li>
+      </ul>
+
+      <div class="contact-cta">
+        <a href="reservation.html" class="btn btn-primary">
+          Online rezervace
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="tel:+420724970066" class="btn btn-secondary">Zavolat</a>
+      </div>
+    </div>
+
+    <div class="contact-map reveal">
+      <iframe class="map-frame"
+        src="https://www.openstreetmap.org/export/embed.html?bbox=17.97970%2C49.47540%2C17.99470%2C49.48140&layer=mapnik&marker=49.476805%2C17.978360"
+        loading="lazy"
+        title="Mapa — Sklářská 604/2, Valašské Meziříčí"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="brand">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+          </span>
+          <span style="color:#fff;">VETEVRA</span>
+        </div>
+        <p>Soukromá veterinární praxe MVDr. Evy Vrátníkové. Šetrná medicína a celostní přístup k vašim mazlíčkům ve Valašském Meziříčí od roku 2018.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navigace</h4>
+        <ul>
+          <li><a href="#about">O nás</a></li>
+          <li><a href="#services">Služby</a></li>
+          <li><a href="#hours">Ordinační hodiny</a></li>
+          <li><a href="#gallery">Galerie</a></li>
+          <li><a href="reservation.html">Rezervace</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Kontakt</h4>
+        <ul>
+          <li>Sklářská 604/2</li>
+          <li>757 01 Valašské Meziříčí</li>
+          <li><a href="tel:+420724970066">+420 724 970 066</a></li>
+          <li><a href="mailto:vetevra@gmail.com">vetevra@gmail.com</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Důležité info</h4>
+        <ul>
+          <li>IČ: 01066781</li>
+          <li>Storno poplatek: 500 Kč</li>
+          <li>Parkování v okolí</li>
+          <li>MHD linka 1, zast. Tesla I</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 VETEVRA · MVDr. Eva Vrátníková · IČ 01066781</span>
+      <span>Redesign · Demo</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
